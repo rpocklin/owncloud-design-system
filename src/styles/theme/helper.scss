@@ -31,11 +31,11 @@ $directions: 'top', 'right', 'bottom', 'left';
 }
 
 .oc-border {
-  border: $global-border-width solid $global-border !important;
+  border: $global-border-width solid $border-primary !important;
 
   @each $direction in $directions {
     &-#{$direction} {
-      border-#{$direction}: $global-border-width solid $global-border !important;
+      border-#{$direction}: $global-border-width solid $border-primary !important;
     }
   }
 }
@@ -43,4 +43,8 @@ $directions: 'top', 'right', 'bottom', 'left';
 .oc-light {
   color: $global-inverse-color !important;
   fill: $global-inverse-color !important;
+}
+
+.oc-text-bold {
+  font-weight: 600 !important;
 }

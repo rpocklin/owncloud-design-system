@@ -356,7 +356,7 @@ export default {
     <div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-top">
       <oc-autocomplete ariaLabel="Complex selection autocomplete" v-model="complexSelection" :items="complexItems" :filter="filterComplexItems" placeholder="type 'er' for example results">
         <template v-slot:item="{item}">
-          <span class="uk-text-bold">{{ item.forename }} {{ item.surname }}</span>
+          <span class="oc-text-bold">{{ item.forename }} {{ item.surname }}</span>
           <div class="uk-text-meta">(Age: {{ item.age }})</div>
         </template>
       </oc-autocomplete>

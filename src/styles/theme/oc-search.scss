@@ -5,6 +5,7 @@
   min-width: $form-width-medium;
 
   &-button {
+    border-radius: 0 3px 3px 0;
     // Prevend double borders
     // from input and button
     transform: translateX(-1px);
@@ -12,11 +13,18 @@
   }
 
   &-input > .oc-text-input {
+    background-color: $search-bar-background;
+    border: 1px solid $search-bar-border;
+    border-radius: 3px 0 0 3px;
     padding-right: $medium-gutter;
 
     &::-ms-clear,
     &::-ms-reveal {
       display: none;
+    }
+
+    &:focus {
+      background-color: $search-bar-background;
     }
   }
 
@@ -43,7 +51,7 @@
     }
 
     .oc-button {
-      @extend .uk-button-small;
+      @extend .oc-button-small;
     }
 
     .oc-icon {

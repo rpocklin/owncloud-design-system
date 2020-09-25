@@ -15,7 +15,7 @@ props:
   large-margin:
     value: "70px"
   xlarge-margin:
-    value: "140px"
+    value: "100px"
 global:
   type: number
   category: space
