@@ -2,6 +2,7 @@
   <label>
     <input
       class="oc-checkbox"
+      :class="`oc-checkbox-${size}`"
       type="checkbox"
       v-model="$_ocCheckbox_checkboxState"
       @change="$_ocCheckbox_change($event)"
@@ -43,6 +44,15 @@ export default {
       required: false,
       default: false,
     },
+    /**
+     * Size of the Checkbox. Valid values are `medium` and `big`
+     */
+    size: {
+      type: String,
+      required: false,
+      default: "medium",
+      validator: (size) => /(medium)|(big)/.test(size)
+    }
   },
   methods: {
     $_ocCheckbox_change(event) {
@@ -82,7 +92,7 @@ export default {
                 <oc-checkbox label="Label" />
                 <oc-checkbox v-model="checkState1" label="Label"/>
                 <div @click="parentClick">
-                    <oc-checkbox label="Label" />
+                    <oc-checkbox size="big" label="Label" />
                 </div>
             </section>
 

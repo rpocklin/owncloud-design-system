@@ -1,0 +1,59 @@
+.oc-padding {
+  padding: $margin !important;
+
+  @each $direction in $directions {
+    &-#{$direction} {
+      padding-#{$direction}: $margin !important;
+    }
+  }
+
+  &-xsmall {
+    padding: $xsmall-margin !important;
+
+    @each $direction in $directions {
+      &-#{$direction} {
+        padding-#{$direction}: $xsmall-margin !important;
+      }
+    }
+  }
+
+  &-small {
+    padding: $small-margin !important;
+
+    @each $direction in $directions {
+      &-#{$direction} {
+        padding-#{$direction}: $small-margin !important;
+      }
+    }
+  }
+
+  &-medium {
+    padding: $medium-margin !important;
+
+    @each $direction in $directions {
+      &-#{$direction} {
+        padding-#{$direction}: $medium-margin !important;
+      }
+    }
+  }
+
+  &-large {
+    padding: $large-margin !important;
+
+    @each $direction in $directions {
+      &-#{$direction} {
+        padding-#{$direction}: $large-margin !important;
+      }
+    }
+  }
+
+  &-xlarge {
+    padding: $xlarge-margin !important;
+
+    @each $direction in $directions {
+      &-#{$direction} {
+        padding-#{$direction}: $xlarge-margin !important;
+      }
+    }
+  }
+}
