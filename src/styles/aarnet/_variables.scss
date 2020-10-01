@@ -1,0 +1,52 @@
+// $global-font-size: 25px;
+// $global-background: $background;
+
+// $global-color: $color;
+$color: #333333;
+// $global-color: $color;
+$aarnet-primary-color: #754A90;
+// button and title etc
+$muted-color: $color;
+$emphasis-color: $color; // headings etc
+// $global-muted-color: $muted-color;
+
+// sidebar etc
+$brand-primary: $color; // changes icons to black
+
+$action-primary: $aarnet-primary-color; // primary button - but this is also button raw for table sort :(
+$action-primary-hover: darken($action-primary, 15%); // make this DARKEN $global-emphasis-color
+$shadow-action-primary: darken($action-primary-hover, 15%);
+
+$system-icon-color: $color;
+// icons etc 
+// $global-color: $global-emphasis-color; // NOPE
+
+$inverse-color: #ffffff; // lhs sidebar text, text colour in button
+// $global-inverse-color: $color;
+// $muted-background: $color;
+
+// $filetype-icon-color: $color;
+// $active-icon-color: $color;
+// $passive-icon-color: $color;
+// $system-icon-color: $color;
+
+// $global-link-color: $link-color;
+// $global-link-hover-color: $link-hover-color;
+
+// $global-muted-background: $muted-background;
+// $global-primary-background: $primary-background;
+// $global-secondary-background: $secondary-background;
+// $global-selected-background: $selected-background;
+
+// $global-success-background: $success-background;
+// $global-warning-background: $warning-background;
+// $global-danger-background: $danger-background;
+
+// $global-border: #cc00aa;
+
+// $navbar-nav-item-height: 60px;
+
+// // Transition durations
+// $transition-duration-short: 200ms;
+
+// $global-font-family: 'Source Sans Pro', sans-serif;
