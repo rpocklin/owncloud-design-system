@@ -179,11 +179,12 @@
   &.oc-button-raw {
     @extend .oc-button-reset;
 
-    color: $action-primary;
+    color: $color;
+    font-weight: bold;
 
     &:hover,
     &:focus {
-      color: $action-primary-hover;
+      color: darken($color, 15%);
     }
   }
 }

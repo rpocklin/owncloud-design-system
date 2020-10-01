@@ -4,6 +4,8 @@
     :username="userName"
     :size="width"
     :src="src"
+    background-color="#754A90"
+    color="#ffffff"
     :alt="accessibilityLabel"
     :aria-hidden="accessibilityLabel === ''"
   />
